@@ -55,6 +55,7 @@ git clone URL_DO_REPOSITORIO
 
 2. Acesse a pasta do projeto.
 3. Abra o arquivo `index.html` em seu navegador.
+4. ou abre o site 🌐 **[Acesse meu Portfólio](https://victordanieldev.github.io/portfolio/)**
 
 ## 📚 Contexto acadêmico
 
