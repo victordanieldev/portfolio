@@ -1,9 +1,20 @@
 const botaoTema = document.getElementById("theme-toggle");
 
+function alterarLogo(tema) {
+    const logo = document.getElementById("logo-site");
+
+    if (tema === "light") {
+        logo.src = "img/logo-light.png";
+    } else {
+        logo.src = "img/logo-dark.png";
+    }
+}
+
 botaoTema.setAttribute("aria-label", "Ativar tema claro");
 botaoTema.addEventListener("click", function () {
     const temaClaro = document.body.classList.toggle("claro");
 
+    alterarLogo(temaClaro ? "light" : "dark");
     botaoTema.textContent = temaClaro ? "☾" : "☀";
     botaoTema.setAttribute(
         "aria-label",
