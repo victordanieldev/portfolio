@@ -241,6 +241,20 @@ body.claro .hero-buttons .btn-outline:is(:hover, :active) i {
     z-index: 1000;
 }
 
+.nav-logo {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: start;
+    min-height: 44px;
+}
+
+.nav-logo img {
+    display: block;
+    width: 64px;
+    height: auto;
+}
+
 .nav-center {
     position: absolute;
     left: 50%;
@@ -580,9 +594,13 @@ span {
         position: static;
         flex-wrap: wrap;
         justify-content: space-between;
-        gap: 8px 20px;
+        gap: 8px 12px;
         height: auto;
         padding: 12px 5%;
+    }
+
+    .nav-logo {
+        margin-right: auto;
     }
 
     body:has(.menu-toggle:not([hidden])) {
